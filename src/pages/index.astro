@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/layout.astro';
+import Header from '../layouts/header.astro';
+import Footer from '../layouts/footer.astro';
+import "../styles/main.scss"
+---
+
+<Layout title="Test test">
+	<Header />
+	<div class="wrap">
+		<h1>test 123 213</h1>
+	</div>
+	<Footer />
+</Layout>
+
+<style lang="scss">
+.wrap {
+  h1 {
+    border: 2px solid red;
+  }
+}
+</style>
