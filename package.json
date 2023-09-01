@@ -1,5 +1,5 @@
 {
-  "name": "adorable-azimuth",
+  "name": "astro-template-tool",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,7 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.0.3"
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^3.0.3",
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "sass": "^1.66.1"
