@@ -1,22 +1,39 @@
 ---
-import Layout from '../layouts/layout.astro';
-import Header from '../layouts/header.astro';
-import Footer from '../layouts/footer.astro';
-import "../styles/main.scss"
+import { Image } from 'astro:assets'
+import Layout from '../layouts/layout.astro'
+import Header from '../layouts/header.astro'
+import Footer from '../layouts/footer.astro'
+import cubeImage from '../assets/images/cube.jpg'
 ---
 
 <Layout title="Test test">
-	<Header />
-	<div class="wrap">
-		<h1 class="ml-2 text-brown">test 123 213</h1>
-	</div>
-	<Footer />
+  <Header />
+  <div class="wrap">
+    <h1 class="ml-6 text-brown">test 123 213</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="120" viewBox="0 0 1440 120" fill="none">
+      <path d="M0 6.10352e-05L1440 6.10352e-05L0 120L0 6.10352e-05Z" fill="white"></path>
+    </svg>
+    <Image src={cubeImage} alt="descriptive text" />
+  </div>
+  <Footer />
 </Layout>
 
+<script src="../js/index.js"></script>
+<script>
+  console.log('index page init')
+</script>
+
 <style lang="scss">
-.wrap {
-  h1 {
-    border: 2px solid red;
+  .wrap {
+    background-color: var(--main-color);
+
+    h1 {
+      position: relative;
+      border: 2px solid red;
+
+      @include media-breakpoint-down(lg) {
+        border: 2px solid green;
+      }
+    }
   }
-}
 </style>
