@@ -1,33 +1,35 @@
-# Astro Starter Kit: Basics
+# Astro Content Site Build Tool
 
-```
-npm create astro@latest -- --template basics
-```
+> 🚀 Fast template build content & static site tool from astro 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+![astro-docs](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
+## 📚 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
 ```
 /
 ├── public/
-│   └── favicon.svg
+│   └── favicon.svg 
 ├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
+│   ├── components/        # let you put some components
+│   ├── layouts/           # site layout
+│   │   ├── footer.astro
+│   │   ├── header.astro
+│   │   └── layout.astro
+│   ├── pages/             # page route
 │       └── index.astro
-└── package.json
+│   └── styles             # put site scss file
+│       └── setting        # put scss function or mixin
+│           └── init.scss  # main import scss file
+│       └── root.scss      # root variable setting
+├── package.json           # npm package
+├── .eslintignore          # eslint ignore setting
+├── .eslintrc.cjs          # eslint setting
+├── .prettierrc.cjs        # prettier setting
+├── .stylelintrc.cjs       # stylelint setting
+└── README.md
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
@@ -51,4 +53,11 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check astro doc [our documentation](https://docs.astro.build) or jump into astro [Discord server](https://astro.build/chat).
+
+
+### 🎫 Licence 
+
+Copyright © 2023 ~ now Tim Chao All rights reserved.
+
+🍛 _<u>Created By: Tim Chao</u>_
