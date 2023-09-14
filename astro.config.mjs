@@ -11,7 +11,7 @@ const __dirname = dirname(__filename)
 export default defineConfig({
   integrations: [tailwind()],
   // if url has folder name , need update base route
-  base: '',
+  base: '/test/',
   vite: {
     resolve: {
       alias: {
