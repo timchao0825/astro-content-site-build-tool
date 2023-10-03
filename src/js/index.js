@@ -1,1 +1,5 @@
-console.log('index js init')
+import $ from 'jquery'
+
+$(document).ready(() => {
+  console.log('index doc ready init')
+})
