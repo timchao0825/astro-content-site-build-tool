@@ -1,29 +1,17 @@
-import { fileURLToPath } from 'url'
-import path, { dirname } from 'path'
+// @ts-check
+import { defineConfig } from "astro/config";
+import vue from "@astrojs/vue";
+import tailwindcss from "@tailwindcss/vite";
 
-import { defineConfig } from 'astro/config'
-
-import tailwind from '@astrojs/tailwind'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()],
-  // if url has folder name , need update base route
-  base: '',
+  // base: '', // if domain is not root, set base path
   vite: {
-    resolve: {
-      alias: {
-        '@/': `${path.resolve(__dirname, 'src')}/`
-      }
-    },
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@import "@/styles/setting/init.scss";`
-        }
-      }
-    }
-  }
-})
+    plugins: [tailwindcss()],
+  },
+  integrations: [
+    vue({
+      devtools: true,
+    }),
+  ],
+});

@@ -1,16 +1,10 @@
 module.exports = {
-  content: ['./src/**/*.{html,js,astro}'],
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
-    colors: {
-      brown: '#604231'
-    },
-    screens: {
-      xxl: { max: '1440px' },
-      xl: { max: '1200px' },
-      lg: { max: '992px' },
-      md: { max: '768px' },
-      sm: { max: '576px' }
-    }
+    extend: {},
   },
-  plugins: []
+  plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 }
