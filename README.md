@@ -1,6 +1,6 @@
 # Astro Content Site Build Tool
 
-> 🚀 Fast template build content & static site tool from astro 
+> 🚀 Fast template build content & static site tool from astro
 
 ![astro-docs](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
@@ -11,7 +11,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ```
 /
 ├── public/
-│   └── favicon.svg 
+│   └── favicon.svg
 ├── src/
 │   ├── components/        # let you put some components
 │   ├── layouts/           # site layout
@@ -21,12 +21,9 @@ Inside of your Astro project, you'll see the following folders and files:
 │   ├── pages/             # page route
 │       └── index.astro
 │   └── styles             # put site scss file
-│       └── setting        # put scss function or mixin
-│           └── init.scss  # main import scss file
-│       └── root.scss      # root variable setting
+│       └── global.css     # tailwindcss file import
 ├── package.json           # npm package
 ├── .eslintignore          # eslint ignore setting
-├── .eslintrc.cjs          # eslint setting
 ├── .prettierrc.cjs        # prettier setting
 ├── .stylelintrc.cjs       # stylelint setting
 └── README.md
@@ -55,8 +52,7 @@ All commands are run from the root of the project, from a terminal:
 
 Feel free to check astro doc [our documentation](https://docs.astro.build) or jump into astro [Discord server](https://astro.build/chat).
 
-
-### 🎫 Licence 
+### 🎫 Licence
 
 Copyright © 2023 ~ now Tim Chao All rights reserved.
 
